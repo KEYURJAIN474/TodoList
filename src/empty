@@ -1,0 +1,19 @@
+<div className="main">
+      <h1 className="todolist">{this.props.name}</h1>
+      <div className="container-fluid">
+        <div className="row">
+          <input className="" type="text" id="hi" onChange={this.getValue} />
+          <button className="" onClick={this.setValue}>Submit</button>
+          <div className="">
+            <button onClick={this.aescsorting}>AescSort</button>
+            <button onClick={this.descsorting}>DescSort</button>
+            <button onClick={this.datesort}>DateSort</button>
+            <button onClick={this.selectsort}>SelectSort</button>
+          </div>
+          <h2 className="row flex-center">Total Items : {this.state.count}/{this.len()}</h2>
+          <ul>
+            {this.item()}
+          </ul>
+        </div>
+      </div>
+    </div>

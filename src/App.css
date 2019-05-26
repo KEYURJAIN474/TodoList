@@ -31,3 +31,245 @@
     transform: rotate(360deg);
   }
 }
+/* new style */
+.todo{
+  display: flex;
+  flex-direction: column;
+}
+/* header */
+.head{
+  display:flex;
+  justify-content:space-around;
+  /* text-align: center; */
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: transparent;
+  color:white;
+  font-style: 'Benton Sans Extra Comp Blackserif';
+  font-stretch: expanded;
+  font-size: 70px;
+  letter-spacing: 5px;
+}
+/* header end */
+/* input */
+.inp {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+	border:2px solid rgba(255,255,255,.5);
+	font-size:1.75em;
+	/* padding:.25em .5em .3125em; */
+	color:white;
+	border-radius:.25em;
+	background:transparent;
+  transition:all .100s;
+  /* margin-left:38%;  */
+  opacity: 1;
+  margin-right:0px;
+  transition: opacity 0.5s ease-in-out;
+ }
+	.inp:focus{
+		outline:none;
+		color:rgba(255,255,255,.75);
+		border-color:rgba(255,255,255,.75);
+	}
+	
+	.inp.keyup {
+		color:white;
+		border-color:white;
+		text-shadow:0 0 .125em white;
+		box-shadow:0 0 .25em white,inset 0 0 .25em white;
+	}
+  .inp:hover{
+    background: #4a4a4b;
+    opacity: 0.5;
+    color:white;
+  }
+.head2{
+  display: flex;
+  flex-basis: 215px;
+  color:white;
+}
+span{
+display: flex;
+margin-left: auto;
+}
+@media only screen and (max-width: 767px) {
+  
+  .inp:hover{
+    background:transparent;
+    opacity: 0.5;
+    color:red;
+  }
+  span{
+    display: flex;
+    margin-right: auto;
+    margin-bottom: 5%;
+  }
+  .inp {
+    display: flex;
+    margin: 0 0 0 30%;
+    margin-bottom: 5%;
+    
+    
+  }  
+}
+/* input end */
+/* button  */
+
+.btn{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin:2% 0 2% 0; 
+  width: 60%;
+
+  }
+
+  @media only screen and (max-width: 767px){
+.btn{
+margin-top: 1%; 
+color:white !important;
+}
+.butt{
+  background: #282c34 !important;
+  font-size: 30px !important;
+  border-radius: 5rem !important;
+  
+}
+input{
+  background: #adafb4 !important;
+  /* margin-right:1rem; */
+}
+  }
+/* button end */
+/* status */
+
+.stat{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+/* status end */
+
+
+
+/* progress bar */
+.pro {
+  display: flex;
+  height: 2rem !important;
+  width: 80% !important;
+  overflow: hidden;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  /* margin-right: 2rem; */
+ margin-right: 25px;
+ margin-left: 25px;
+ margin-top:15px;
+ margin-bottom: 15px;
+ padding: 0 !important;
+}
+.progress{
+  width: 100% !important;
+  height:100% !important;
+  /* margin:0 !important; */
+}
+.selecthead{
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  color:white;
+  align-self: center;
+  margin-bottom: 20px;
+  
+}
+@media only screen and (max-width: 767px){
+  .selecthead{
+    display:none;
+  }
+}
+/* end progress bar */
+.unord{
+  text-decoration: none;
+}
+.ll{ background:white;
+  color:black;
+  border-radius: 3rem;
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top:2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+.head5{
+  display: inline !important;
+  margin-left:3rem;
+  padding-top: .5rem;
+  display: flex;
+  
+}
+.ll:hover{
+  background: #fac104;
+  color:white;
+}
+
+.dd{
+  float:right;
+  margin-right: 2rem;
+}
+
+.jj{
+  color:black;
+  border-radius: 3rem;
+  list-style-type: none;
+  margin-right: 2rem;
+  margin-top:2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+background: #61dafb;
+
+}
+.pinc{
+  float: right;
+  margin-right: 2rem;
+  font-size: 35px;
+  color:red;
+}
+/* .jj:hover{
+  background: #61dafb;
+  color: black;
+} */
+.bb{
+  margin-top:.8rem;
+  margin-right: .5rem;
+  margin-left:1rem;
+  color:white;
+  font-size: 35px;
+}
+.bb:hover{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+.cc{
+  margin-top:.8rem;
+  margin-right: .5rem;
+  margin-left:1rem;
+  color:red;
+  font-size: 35px;
+}
+.cc:hover{
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+@media only screen and (max-width: 767px){
+  .ll{
+    margin-top: 3rem;
+  }
+}
