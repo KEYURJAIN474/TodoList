@@ -11,7 +11,7 @@ import "../node_modules/animate.css"
 //import WOW from 'wowjs'
 import "../node_modules/react-touch-events/lib/index"
 
-import ReactTouchEvents from "react-touch-events";
+//import ReactTouchEvents from "react-touch-events";
 
 
 
@@ -40,9 +40,7 @@ class App extends React.Component {
     this.datesort = this.datesort.bind(this);
     this.selectsort = this.selectsort.bind(this);
     this.showLocal = this.showLocal.bind(this);
-    this.handleTap = this.handleTap.bind(this);
-    this.handleSwipe = this.handleSwipe.bind(this);
-
+  
 }
 
 
